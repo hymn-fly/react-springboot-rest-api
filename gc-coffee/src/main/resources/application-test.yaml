@@ -3,8 +3,11 @@ spring:
     console:
       enabled: true
   datasource:
-    url: jdbc:h2:mem:test;INIT=RUNSCRIPT FROM 'classpath:/schema-test.sql';DB_CLOSE_DELAY=-1
+    url: jdbc:h2:mem:test
     username: sa
+    hikari:
+      maximum-pool-size: 1
+      minimum-idle: 1
 
   jpa:
     properties:

@@ -1,5 +1,5 @@
 
-DROP TABLE IF EXISTS product;
+-- DROP TABLE IF EXISTS product;
 
 CREATE TABLE product(
     id BINARY(16) NOT NULL PRIMARY KEY,
