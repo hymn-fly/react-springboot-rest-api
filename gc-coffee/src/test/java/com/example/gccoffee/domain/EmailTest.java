@@ -17,7 +17,7 @@ class EmailTest {
     void testValidEmail() {
         val email = new Email("hello@gmail.com");
 
-        assertThat(email.email()).isEqualTo("hello@gmail.com");
+        assertThat(email.getAddress()).isEqualTo("hello@gmail.com");
     }
 
     @Test
